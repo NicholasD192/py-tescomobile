@@ -1,7 +1,6 @@
 import requests
 import time
 import uuid
-import datetime
 
 def response_valid(func, *args):
     """check that the API returns a success code in the response"""

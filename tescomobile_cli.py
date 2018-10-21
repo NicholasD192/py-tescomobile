@@ -1,5 +1,4 @@
  # -*- coding: utf-8 -*-
-
 if __name__ == '__main__':
 
     # Check for python 3.X
@@ -50,7 +49,7 @@ if __name__ == '__main__':
 
     DATE_FORMAT = '%d/%m/%Y'
 
-    # Determine column widths. COL3 fills remaining space.
+    # Determine column widths.  COL3 fills remaining space.
     console_width = shutil.get_terminal_size((80,)).columns
 
     COL1_WIDTH = 20
@@ -129,9 +128,9 @@ if __name__ == '__main__':
         col2 = (col2_used + '/' + col2_total).rjust(COL2_WIDTH)
 
         # ASCI progress bar
-        progess_percent = float(al.used)/al.total * 100
+        progess_percent = float(al.used) / al.total * 100
 
-        progress_size  = COL3_WIDTH - 2
+        progress_size = COL3_WIDTH - 2
         progress_bar_size = int(progess_percent / (float(100) / progress_size))
         progress_empty_size = progress_size - progress_bar_size
 
